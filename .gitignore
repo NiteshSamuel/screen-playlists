@@ -1,0 +1,67 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+*.log.*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Misc
+*.tgz
+*.zip
+*.tar.gz
+.cache/
+.temp/
+.tmp/
+
+# React specific
+# if you’re using CRA
+node_modules/.cache
+eslintcache
+
+# Server (Express / Node)
+uploads/
+public/uploads/
+
+# Optional: Ignore local database or keys
+*.pem
+*.key
+*.crt
