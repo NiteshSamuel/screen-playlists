@@ -15,6 +15,7 @@ export function requireAuth(req: AuthRequest, res: Response, next: NextFunction)
     }
 
     const token= parts[1];
+    if(!token) return res.status(401).json({message: 'Token missing'});
     try{
         const payload=verifyToken(token);
         req.user={
