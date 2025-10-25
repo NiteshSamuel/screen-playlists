@@ -224,6 +224,6 @@ npm test
 
 ---
 
-**Developed by:** *[Your Name]*
+**Developed by:** *Nitesh Samuel*
 📅 **Assignment 2:** Meeting Room Conflict Resolver
 🛠️ **Stack:** TypeScript • Node.js • Pure Functional Logic
