@@ -14,14 +14,16 @@ dotenv.config();
 
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
-import { User } from './models/User.js';
-import { Screen } from './models/Screen.js';
-import { Playlist } from './models/Playlist.js';
+import {User} from './models/User';
+import { Screen } from './models/Screen';
+import { Playlist } from './models/Playlist';
 
 async function main() {
   const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/screens_playlists';
   await mongoose.connect(MONGO_URI);
   console.log('Connected to Mongo for seeding');
+
+
 
   // Clean optional: remove existing sample docs
   // WARNING: don't drop users in production

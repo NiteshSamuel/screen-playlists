@@ -1,5 +1,5 @@
 import {Request, Response, NextFunction} from 'express';
-import {verifyToken} from '../utils/jwt.js';
+import {verifyToken} from '../utils/jwt';
 
 export interface AuthRequest extends Request{
     user?:{id:string, email:string, role:string};
@@ -7,6 +7,7 @@ export interface AuthRequest extends Request{
 
 export function requireAuth(req: AuthRequest, res: Response, next: NextFunction){
     const authHeader= req.headers.authorization;
+    console.log(authHeader);
     if(!authHeader) return res.status(401).json({message: 'Authorization header missing'});
 
     const parts=authHeader.split(' ');

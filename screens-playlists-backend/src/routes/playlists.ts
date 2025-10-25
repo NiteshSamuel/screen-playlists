@@ -1,6 +1,6 @@
 import express from 'express';
-import { requireAuth, requireRole, AuthRequest } from '../middleware/auth.js';
-import { Playlist } from '../models/Playlist.js';
+import { requireAuth, requireRole, AuthRequest } from '../middleware/auth';
+import { Playlist } from '../models/Playlist';
 import { z } from 'zod';
 import escapeStringRegexp from 'escape-string-regexp';
 

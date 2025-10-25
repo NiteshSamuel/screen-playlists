@@ -1,6 +1,6 @@
 import express from 'express';
-import { requireAuth, requireRole, AuthRequest } from '../middleware/auth.js';
-import { Screen } from '../models/Screen.js';
+import { requireAuth, requireRole, AuthRequest } from '../middleware/auth';
+import { Screen } from '../models/Screen';
 import escapeStringRegexp from 'escape-string-regexp';
 
 const router = express.Router();
